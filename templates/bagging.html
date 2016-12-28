@@ -1,0 +1,153 @@
+{%extends "layout.html"%}
+{%block content%}
+<h1>Bagging</h1>
+<div class="content-container">
+  <p>Things to Remember</p>
+    <ul>
+      <li>Watch out for segregation of plants (i.e., when plants differ between flowers, height, branching, etc.). If you encounter a segregating plot, find a supervisor.</li>
+      <li>Do not bag an off-type (i.e., a plant that differs in some way from the rest of the plot).</li>
+      <li>If the plant is branched, with mulitple  heads, get at least three heads into the bag, if possible.</li>
+      <li>Do not bag the first plant that flowers in a plot unless there are only five, or fewer, plants in the plot.</li>
+      <li>Periodically check bags to ensure the flowers have enough room to expand - if cramped readjust bags.</li>
+      <li>If flowers have already opened in a plot, find a supervisor.</li>
+      <li>If you are not sure about something, ask.</li>
+    </ul>
+  <p>Tools Required</p>
+    <ul>
+      <li>Apron</li>
+      <li>Cloth Pollination Bags</li>
+      <li>Pruners</li>
+      <img src = "{{url_for('static', filename='images/bagging/tools-min.jpg')}}"/>
+    </ul>
+  <p>Getting Started</p>
+    <ol>
+      <!-- Step 1 -->
+      <li>Grab all required tools.</li>
+      <!-- Step 2 -->
+      <li>Fit the apron to your waist.</li>
+      <!-- Step 3 -->
+      <li>Fill both large side pockets with the cloth pollination bags.</li>
+        <ol type = "a">
+          <li>Folding the bags length-ways and stacking them, allows more bags to fit inside the pockets.</li>
+        </ol>
+      <!-- Step 4 -->
+      <li>Place the pruners into another pocket on the apron.</li>
+      <!-- Step 5 -->
+      <li>Begin checking each plot.</li>
+    </ol>
+  <p id = "bagging-step1">Bagging</p>
+    <ol>
+      <!-- Step 1 -->
+      <li>Select a head that is ready to be bagged.</li>
+      <ol type = "a">
+        <li>To gauge the optimal time see <a href = "#App-A">Appendix A.</a></li>
+      </ol>
+      <!-- Step 2 -->
+      <li>Using the pruners, remove only the leaves that will interfere with the bag.</li>
+      <!-- Step 3 -->
+      <li>Place the bag over the head.</li>
+      <ol type = "a">
+        <li>If there are multiple heads on the plant, include at least three in the same bag.</li>
+      </ol>
+      <img src = "{{url_for('static', filename='images/bagging/bag-step3-min.jpg')}}"/>
+      <!-- Step 4 -->
+      <li>Close the bag around the stem.</li>
+      <ol type = "a">
+        <li>Ensure there is no room for any pollinators to get into the bag.</li>
+      </ol>
+      <img src = "{{url_for('static', filename='images/bagging/bag-step4-min.jpg')}}"/>
+      <!-- Step 5 -->
+      <li>Tie the bag closed.</li>
+      <ol type = "a">
+        <li>Skipping the crossing of strings, tie the knot like a pair of shoes.</li>
+        <li>See <a href = "#App-B">Appendix B</a> for further explanation.</li>
+      </ol>
+      <img src = "{{url_for('static', filename='images/bagging/bag-step5-min.jpg')}}"/>
+      <!-- Step 6 -->
+      <li>Pull the sides of the bag to create space for the head to continue growing.</li>
+      <img src = "{{url_for('static', filename='images/bagging/bag-step6-min.jpg')}}"/>
+      <!-- Step 7 -->
+      <li>Repeat <a href = "#bagging-step1">steps 1 - 6</a> for the remainder of plants, required per plot.</li>
+    </ol>
+
+  <!-- Appendix A -->
+
+  <p id = "App-A">Appendix A - Bagging at the Right Time</p>
+  <p class = "Appendix">Use the images below as a reference for what to bag and what to avoid. The optimal head is not only a match to the image below, but is also representative of the majority of the heads within the plot. If all heads within the plot are shaped in a similar manner, select the most representative. If all or most of the heads are passed the optimal point, check with your supervisor for further direction.</p>
+  <!-- Thumbnails -->
+  <!-- http://getbootstrap.com/components/#thumbnails-->
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <a href = "{{url_for('static', filename='images/bagging/app-a-thumb1-min.jpg')}}"/>
+          <img src = "{{url_for('static', filename='images/bagging/app-a-thumb1-min.jpg')}}"/>
+        </a>
+        <div class="caption">
+          <h3>Too Early</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail r-1-c-2">
+        <a href = "{{url_for('static', filename='images/bagging/app-a-thumb2-min.jpg')}}"/>
+          <img src = "{{url_for('static', filename='images/bagging/app-a-thumb2-min.jpg')}}"/>
+        </a>
+        <div class="caption">
+          <h3>Early, but okay. Bag if Friday.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <a href = "{{url_for('static', filename='images/bagging/app-a-thumb3-min.jpg')}}"/>
+          <img src = "{{url_for('static', filename='images/bagging/app-a-thumb3-min.jpg')}}"/>
+        </a>
+        <div class="caption">
+          <h3>Optimal</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <a href = "{{url_for('static', filename='images/bagging/app-a-thumb4-min.jpg')}}"/>
+          <img src = "{{url_for('static', filename='images/bagging/app-a-thumb4-min.jpg')}}"/>
+        </a>
+        <div class="caption">
+          <h3>Past Optimal</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <a href = "{{url_for('static', filename='images/bagging/app-a-thumb5-min.jpg')}}"/>
+          <img src = "{{url_for('static', filename='images/bagging/app-a-thumb5-min.jpg')}}"/>
+        </a>
+        <div class="caption">
+          <h3>Avoid - Not Circular</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <a href = "{{url_for('static', filename='images/bagging/app-a-thumb6-min.jpg')}}"/>
+          <img src = "{{url_for('static', filename='images/bagging/app-a-thumb6-min.jpg')}}"/>
+        </a>
+        <div class="caption">
+          <h3>Avoid - Damaged</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Appendix B -->
+
+  <p id = "App-B">Appendix B - Tying the Pollination Bag</p>
+  <p class = "Appendix"> The purpose of tying the pollination bag is twofold. It not only helps to keep any pollinators out of the bag, but it also keeps the bag from opening due to wind.
+  <br>
+  <br>
+  Tying the bag is not hard however, there is a specific knot that should be used. Using the 'Bow Knot' allows consistency and quick access into the bag as the knot can be undone with a quick tug on a loose end.
+  <br>
+  <br>
+  If a supervisor is unavailable to help you learn this technique, visit <a href = "http://fieggen.com/shoelace/betterbowknot.htm">fieggen.com</a> for a step-by-step guide. Please note, the "Starting Knot", on step 1, should be skipped.</p>
+</div>
+{%endblock%}
